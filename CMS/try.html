@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+    body {
+        /* Set the city management image as the background */
+        background-image: url('mohini.jpg'); 
+        background-size: cover; /* Ensures the image covers the entire screen */
+        background-position: center; /* Centers the image */
+        background-repeat: no-repeat; /* Prevents tiling */
+        
+        /* Full viewport height for centering content */
+        min-height: 100vh;
+        margin: 0;
+        
+        /* Layout for centering the login form */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: sans-serif;
+       }
+       /* ---------------------------------- */
+       /* 2. Login Container Styling */
+       /* ---------------------------------- */
+       .login-form {
+        /* --- The Key for Transparency --- */
+        background-color: rgba(255, 255, 255, 0.75); /* White background with 75% opacity */
+        /* If you prefer a darker, high-tech look:
+        background-color: rgba(0, 0, 0, 0.75);
+        and change text/input colors to white. */
+        
+        padding: 40px;
+        border-radius: 12px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+        width: 350px;
+        max-width: 90%;
+        backdrop-filter: blur(5px); /* Adds a slight blur effect to what's behind the form */
+        text-align: center;
+       }
+       /* ---------------------------------- */
+       /* 3. Text and Input Styling */
+       /* ---------------------------------- */
+       .login-form h2 {
+        margin-bottom: 30px;
+        color: #333; /* Dark text for contrast against the light form */
+        font-weight: 600;
+        letter-spacing: 1px;
+       }
+       .input-group {
+        margin-bottom: 20px;
+       }
+       .login-form input {
+        width: 100%;
+        padding: 12px 15px;
+        border: none;
+        border-radius: 6px;
+        background-color: rgba(255, 255, 255, 0.9); /* Slight white background for input fields */
+        box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+        font-size: 16px;
+        box-sizing: border-box; /* Ensures padding is included in the element's total width and height 
+       */
+       }
+       .login-form input::placeholder {
+        color: #999;
+       }
+       /* ---------------------------------- */
+       /* 4. Button and Links Styling */
+       /* ---------------------------------- */
+       .login-button {
+        width: 100%;
+        padding: 12px;
+        margin-top: 10px;
+        background-color: #007bff; /* A nice, vibrant blue for the button */
+        color: white;
+        border: none;
+        border-radius: 6px;
+        font-size: 18px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: background-color 0.3s;
+        letter-spacing: 1px;
+       }
+       .login-button:hover {
+        background-color: #0056b3;
+       }
+       .links {
+        margin-top: 25px;
+        font-size: 14px;
+       }
+       .links a {
+        color: #333; /* Dark links for contrast */
+        text-decoration: none;
+        transition: color 0.3s;
+       }
+       .links a:hover {
+        color: #007bff;
+        text-decoration: underline;
+       }
+       .links span {
+        margin: 0 10px;
+        color: #aaa;
+       }</style>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>City Management Login</title>
+ <link rel="stylesheet" href="mohinistyle.css">
+</head>
+<body>
+ <div class="login-container">
+ <form class="login-form">
+ <h2>CITY MANAGEMENT LOGIN</h2>
+ 
+ <div class="input-group">
+ <input type="text" id="username" name="username" placeholder="Username" 
+required>
+ </div>
+ 
+ <div class="input-group">
+ <input type="password" id="password" name="password" placeholder="Password" 
+required>
+ </div>
+ 
+ <button type="submit" class="login-button">LOGIN</button>
+ 
+ <div class="links">
+ <a href="#">Forgot Password?</a>
+ <span>|</span>
+ <a href="#">Create Account</a>
+ </div>
+ </form>
+ </div>
+</body>
+</html>
